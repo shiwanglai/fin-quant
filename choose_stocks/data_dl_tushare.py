@@ -14,7 +14,7 @@ def download_data(stock_name):
     #df.to_csv('000858.csv')
     df.to_csv(stock_path_name)
 
-def read_data_from_file(stock_name, start='2020-01-01', end='2020-12-30'):
+def read_data_from_file(stock_name, start='2019-06-01', end='2020-12-30'):
     stock_path_name = '~/dev/data/' + stock_name + '.csv'
     dfx = pd.read_csv(stock_path_name)
 
