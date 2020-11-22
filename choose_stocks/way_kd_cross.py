@@ -201,7 +201,7 @@ def buy_sell(dfx, KValue, DValue, RSV):
     data['Buy'] = sig_price_buy
     data['Sell'] = sig_price_sell
 
-    data.to_csv("data_all.csv")
+    data.to_csv("buy_sell_datas.csv")
 
     #return (sig_price_buy, sig_price_sell)
     print(len(data))
@@ -278,11 +278,12 @@ def do_kdj():
     # btjc, 603068
     # xagf, 600596
     #df_stk = dl.read_data_from_file('600196', start='2019-06-01')
-    df_stk = dl.read_data_from_file('600196')
+    #df_stk = dl.read_data_from_file('600196')
     #df_stk = dl.read_data_from_file('000858')
     #df_stk = dl.read_data_from_file('603068')
     #df_stk = dl.read_data_from_file('600596', start='2019-06-01')
     #df_stk = dl.read_data_from_file('600596')
+    df_stk = dl.read_data_from_file('USDT-BTC')
     print(df_stk.head(10))
     #print(df_stk.tail())
     #draw_data(df_stk)
